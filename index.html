@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="ejemplos-html-3\imgs\logo_favicon.ico" type="image/x-icon">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Lucas Rodriguez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+<div class="contenedor">
+    <header>
+        <div class="container">
+            <h1>Clase 4</h1>
+            <h2>Formularios</h2>
+            <label class="boton">
+                <input class="botonespacio" type="checkbox"> Dark Mode
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+</nav>
+   <form action="POST" method="post" target="_blank">
+    <fieldset> <legend>Personal Information </legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Insert your name...">
+
+        <label for="lastname">Lastname:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Insert your lastname...">
+
+        <label for="dni">DNI:</label>
+        <input type="number" id="dni" name="dni" placeholder="Insert your DNI...">
+
+        <label for="nro_tramite">Procedure Number:</label>
+        <input type="password" id="nro_tramite" name="nro_tramite" >
+        <br>
+        <label for="nro_childrens">Nro of childrens (0-10):</label>
+        <input type="number" min="0" max="10" id="nro_childrens" name="nro_childrens" >
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" >
+
+        <label for="date_birth">Date of birthday</label>
+        <input type="date" id="date_birth" name="date_birth" min="2018-01-01" max="2018-12-31">
+
+        <label for="picture">Add your picture</label>
+        <input type="file" id="picture" name="picture">
+    </fieldset>  
+    <fieldset>
+        <legend>Information for inscription</legend>
+        <label for="turno"> Select your preferred shift</label>
+        <select name="shift" id="shift"> 
+            <option value="1">Morning</option>
+            <option value="2">Afternoon</option>
+            <option value="3" selected>Evening</option>
+            <option value="4">Night</option>
+        </select>
+        <br>
+        <label for="knowledge">Previews knowledge:</label>
+        <input type="checkbox" name="knowledge"value='1'>HTML
+        <input type="checkbox" name="knowledge"value='2'>CSS
+        <input type="checkbox" name="knowledge"value='3'>JavaScript
+        <br>
+        <label for="interested">I am interested in</label>
+        <input type="radio" name="interested" id="interested" value="1"> FS - Py
+        <input type="radio" name="interested" id="interested" value="2"> FS - JavaScript
+        <input type="radio" name="interested" id="interested" value="3"> FS- PHP
+        <input type="radio" name="interested" id="interested" value="4"> Design UX/UI
+    </fieldset>
+    <br>
+    <label for="comment"> Leave your comment:</label>
+    <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Text your comment"></textarea>
+    <br><br>
+    <input type="submit" value="send">
+    <input type="reset" value="reset">
+   </form>
+<!-- <script src="codigo.js"></script> -->
+<script src="codigo.js"></script>
+</body>
+</html>
